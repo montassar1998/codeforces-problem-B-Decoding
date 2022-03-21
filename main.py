@@ -1,0 +1,24 @@
+n=input()
+p=n
+ch=raw_input()
+res=[]
+ch=list(ch)
+while(ch!=[]):
+  #print(res)
+  if(p==n):
+    n-=1
+    res=[ch[0]]
+    ch.pop(0)
+  else:
+    if(n%2==0):
+      n-=1
+      res.insert(0,ch[0])
+      ch.pop(0)
+    else:
+      n-=1
+      res.append(ch[0])
+      ch.pop(0)
+resf=""
+for i in res:
+  resf+=i
+print(resf)
